@@ -46,19 +46,19 @@
 
 
 <meta name="description" content="前言：方法替换，可以替换任意外部类的方法，而动态添加方法只能实现在被添加类创建的对象里，但是将方法替换和动态添加方法结合使用，可以实现，对任意外部类动态添加需要的方法。
-缺陷：1、含参数的方法难以处理，参数值需要根据实际业务逻辑而定。2、无法实现动态添加类方法。">
+缺陷：1、含参数的方法难以处理，参数值需要根据实际业务逻辑而定。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="runtime 方法替换 和 动态添加实例方法 结合使用">
-<meta property="og:url" content="http://HeYang123456789.github.io/2016/01/12/runtime '方法替换'和'动态添加方法'结合使用/index.html">
+<meta property="og:url" content="http://HeYang123456789.github.io/2015/01/12/runtime '方法替换'和'动态添加方法'结合使用/index.html">
 <meta property="og:site_name" content="HeYang">
 <meta property="og:description" content="前言：方法替换，可以替换任意外部类的方法，而动态添加方法只能实现在被添加类创建的对象里，但是将方法替换和动态添加方法结合使用，可以实现，对任意外部类动态添加需要的方法。
-缺陷：1、含参数的方法难以处理，参数值需要根据实际业务逻辑而定。2、无法实现动态添加类方法。">
+缺陷：1、含参数的方法难以处理，参数值需要根据实际业务逻辑而定。">
 <meta property="og:image" content="http://img.hoop8.com/attachments/1601/9401900187259.png">
-<meta property="og:updated_time" content="2016-01-12T01:10:57.000Z">
+<meta property="og:updated_time" content="2016-01-12T02:55:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="runtime 方法替换 和 动态添加实例方法 结合使用">
 <meta name="twitter:description" content="前言：方法替换，可以替换任意外部类的方法，而动态添加方法只能实现在被添加类创建的对象里，但是将方法替换和动态添加方法结合使用，可以实现，对任意外部类动态添加需要的方法。
-缺陷：1、含参数的方法难以处理，参数值需要根据实际业务逻辑而定。2、无法实现动态添加类方法。">
+缺陷：1、含参数的方法难以处理，参数值需要根据实际业务逻辑而定。">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -224,8 +224,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-01-12T00:55:59+08:00" content="2016-01-12">
-              2016-01-12
+            <time itemprop="dateCreated" datetime="2015-01-12T00:55:59+08:00" content="2015-01-12">
+              2015-01-12
             </time>
           </span>
 
@@ -264,8 +264,7 @@
 
       
         <span itemprop="articleBody"><p>前言：方法替换，可以替换任意外部类的方法，而动态添加方法只能实现在被添加类创建的对象里，但是将方法替换和动态添加方法结合使用，可以实现，对任意外部类动态添加需要的方法。</p>
-<p>缺陷：1、含参数的方法难以处理，参数值需要根据实际业务逻辑而定。2、无法实现动态添加类方法。</p>
-<a id="more"></a>
+<p>缺陷：1、含参数的方法难以处理，参数值需要根据实际业务逻辑而定。<br><a id="more"></a></p>
 <h3 id="Create_Person-h_and_Person-m"><a href="#Create_Person-h_and_Person-m" class="headerlink" title="Create Person.h and Person.m"></a>Create Person.h and Person.m</h3><p>Person.h:</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#import <span class="title">&lt;Foundation/Foundation.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">Person</span> : <span class="title">NSObject</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
 <p>Person.m:</p>
@@ -294,13 +293,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/09/IOS开发工程师的网页前端入门笔记/" rel="next" title="IOS开发工程师的网页前端入门笔记">
-                <i class="fa fa-chevron-left"></i> IOS开发工程师的网页前端入门笔记
-              </a>
-            
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/01/08/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
