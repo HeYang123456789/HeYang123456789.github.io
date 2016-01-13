@@ -263,7 +263,7 @@
 
       
         
-          <p>前言：方法替换，可以替换任意外部类的方法，而动态添加方法只能实现在被添加类创建的对象里，但是将方法替换和动态添加方法结合使用，可以实现，对任意外部类动态添加需要的方法，这个方法可以是类方法也可以是实例方法。</p>
+          <p>前言：方法替换，可以替换任意外部类的方法，而动态添加方法只能实现在被添加类创建的对象里，但是将方法替换和动态添加方法结合使用，可以实现，对任意外部类动态添加需要的方法，这个方法可以是类方法也可以是实例方法，这个外部类也可以是没有任何方法声明和实现的类。</p>
 <p>主要思路：使用运行时的方法替换将在外部类将自定义方法<code>hy_resolveInstanceMethod</code>或<code>hy_resolveClassMethod</code>(用<code>hy_</code>前缀表示是我自定义的方法)和需要被添加的类中的<code>resolveInstanceMethod</code>或者<code>resolveClassMethod</code>方法替换，替换之前在<code>hy_resolveInstanceMethod</code>或<code>hy_resolveClassMethod</code>方法内部写好本应该在<code>resolveInstanceMethod</code>或者<code>resolveClassMethod</code>方法内部写好的runtime动态添加方法的逻辑。</p>
 <p>有点绕，不过至少需要继续阅读源码，思考其中的逻辑，其实不难，前提是熟悉使用runtime的方法。</p>
 <p>缺陷：1、含参数的方法难以处理，参数值需要根据实际业务逻辑而定。</p>
